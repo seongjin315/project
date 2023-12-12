@@ -1,0 +1,32 @@
+.WorkMenu {
+  width: 40%;
+  height: 90px;
+  flex-shrink: 0;
+  border: 1px solid #000; 
+  margin-left: 0px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.WorkMenu button {
+  flex: 1;
+}
+
+/* 각 버튼의 스타일 설정 */
+.WorkMenu button.ColorSetting {
+  background-color: #FFFF;
+}
+
+.WorkMenu button.WorkName {
+  background-color: #FFFF;
+}
+
+.WorkMenu button.StartTime {
+  background-color: #FFFF;
+}
+
+.WorkMenu button.EndTime {
+  background-color: #FFFF;
+}

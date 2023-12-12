@@ -1,0 +1,111 @@
+/* Home.css */
+.Top {
+  width: 100%;
+  height: 90px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  margin-left: 0px;
+  list-style-type: none; /* 기본 목록 마커(글머리 기호) 제거 */
+  padding: 0; /* 내부 간격 제거 */
+  display: flex; /* 가로 정렬을 위해 flexbox 사용 */
+}
+
+.Menu {
+  flex-shrink: 0;
+  padding: 40px;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+.logout {
+  margin-left: auto; /* 로그아웃 메뉴를 오른쪽으로 이동시킵니다. */
+  font-size: 20px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.logout a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 각 메뉴 아이템의 스타일 설정 (선택사항) */
+.Top li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.Top li a:hover {
+  color: #007bff;
+}
+
+/* CSS 스타일 시트에 추가 */
+.Top .Menu {
+  position: relative;
+}
+
+.SubMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* 하위 메뉴 배경색 설정 */
+  border: 1px solid #ccc; /* 테두리 추가 (선택사항) */
+}
+
+.Menu:hover .SubMenu {
+  display: block;
+}
+
+
+
+.hostdata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20%;
+}
+
+.calendar-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.react-calendar {
+  margin-left: 10%;
+  width: 80%; /* 달력의 너비 조정 */
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* 날짜 표시 스타일 */
+.react-calendar__tile {
+  padding: 40px; /* 달력의 높이 조정 */
+  text-align: center;
+}
+
+/* 숫자만 나타내도록 스타일 */
+.react-calendar__tile time {
+  display: none; /* 날짜 텍스트를 감춥니다 */
+}
+
+.react-calendar__tile--now {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.react-calendar__navigation {
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 15px 10px;
+  margin-right: 80%;
+}

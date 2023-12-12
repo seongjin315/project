@@ -1,0 +1,54 @@
+/* Calendar.css */
+.calendar {
+    width: 90%; /* 달력 전체 너비 설정 */
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #eee;
+  }
+  
+  .calendar-header span {
+    cursor: pointer;
+  }
+  
+  .calendar-days {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ddd;
+  }
+  
+  .calendar-day {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  .calendar-row {
+    display: flex;
+  }
+  
+  .calendar-cell {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .date {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .disabled {
+    color: #bbb;
+  }
+  
